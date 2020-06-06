@@ -1,5 +1,28 @@
 # ae-knn
 
+## Motivation
+
+Distance based metrics over the input space are central to many analytical/ML based methods, such as clustering, KNN, matching, etc. Whole these methods have various respective benefits, their usage can also often be limited when constrained to euclidean distance on the input space. Limitations include:
+* Lack of accounting for input relationship with dependent variables/objective
+* Limitations with respect to variable interaction
+* Euclidean distance struggles with representation of more complex latent space patterns
+
+Depending on application, there are a variety of ways to mitigate these limitations, including:
+* Dimensional reduction/ latent space transfromation
+* Alternative distance metrics
+* Usage of other methods
+
+Commonly used dimensional reduction techniques include:
+* Principle Component Analysis (PCA)
+* Linear Discriminant Analysis (LDA)
+* Partial Least Squares (PLS)
+* Autoencoders
+
+Autoencoders have demonstrated benefit for more complex input spaces representations such as raw image data, whcih suggests benefit when used in conjunction with distance based methods mentioned earlier (clustering, KNN, matching, etc.). The purpose of this project is to modularize an AE-KNN hybrid implementation which can be used across a diverse span of applications. Although this specific use case is the primary focus of the project, influence was drawn from various related papers/projects worth looking into for further information about the subject:
+* Deep Clustering for Unsupervised Learning of Visual Features- Facebook AI Rsch (2019): [(Paper)](https://arxiv.org/pdf/1807.05520.pdf) [(Code)](https://github.com/facebookresearch/deepcluster)
+* [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2019)](https://arxiv.org/pdf/1802.08465.pdf)
+* [Learning a Neighborhood Preserving Embedding by Convolutional Autoencoder](https://github.com/zhan1182/autoencoder-kNN)
+
 ```
 from main import *
 from tensorflow.examples.tutorials.mnist import input_data
