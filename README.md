@@ -1,4 +1,4 @@
-# ae-knn
+# AE-KNN Module
 
 ## Motivation
 
@@ -19,10 +19,13 @@ Commonly used dimensional reduction techniques include:
 * Autoencoders
 
 Autoencoders have demonstrated benefit for more complex input spaces representations such as raw image data, whcih suggests benefit when used in conjunction with distance based methods mentioned earlier (clustering, KNN, matching, etc.). The purpose of this project is to modularize an AE-KNN hybrid implementation which can be used across a diverse span of applications. Although this specific use case is the primary focus of the project, influence was drawn from various related papers/projects worth looking into for further information about the subject:
-* Deep Clustering for Unsupervised Learning of Visual Features- Facebook AI Rsch (2019): [(Paper)](https://arxiv.org/pdf/1807.05520.pdf) [(Code)](https://github.com/facebookresearch/deepcluster)
-* [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2019)](https://arxiv.org/pdf/1802.08465.pdf)
+* [Deep Clustering for Unsupervised Learning of Visual Features- Facebook AI Rsch (2019)](https://arxiv.org/pdf/1807.05520.pdf) [(Code)](https://github.com/facebookresearch/deepcluster)
+* [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf)
 * [Learning a Neighborhood Preserving Embedding by Convolutional Autoencoder](https://github.com/zhan1182/autoencoder-kNN)
 
+## Implementation
+
+## Usage
 ```
 from main import *
 from tensorflow.examples.tutorials.mnist import input_data
