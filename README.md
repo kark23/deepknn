@@ -7,8 +7,15 @@ Distance based metrics over the input space are central to many analytical/ML ba
 * Limitations with respect to variable interaction
 * Euclidean distance struggles with representation of more complex latent space patterns
 
+<div align="center">
+  
+![alt text](https://github.com/kark23/ae-knn/blob/master/figs/fig1.png?raw=true)
+Figure 1: Intuitive Cluster Differentiation v. Result of K-Means
+
+</div>
+
 Depending on application, there are a variety of ways to mitigate these limitations, including:
-* Dimensional reduction/ latent space transfromation
+* Dimensional reduction/ latent space transformation
 * Alternative distance metrics
 * Usage of other methods
 
