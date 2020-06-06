@@ -10,6 +10,7 @@ Distance based metrics over the input space are central to many analytical/ML ba
 <div align="center">
   
 ![alt text](https://github.com/kark23/ae-knn/blob/master/figs/fig1.PNG?raw=true)
+
 Figure 1: Intuitive Cluster Differentiation v. Result of K-Means
 
 </div>
