@@ -9,7 +9,7 @@ Distance based metrics over the input space are central to many analytical/ML ba
 
 <div align="center">
   
-![alt text](https://github.com/kark23/deepknn/blob/master/figs/fig1.PNG?raw=true)
+![alt text](https://github.com/kark23/deepknn/blob/dev/figs/fig1.PNG?raw=true)
 
 Figure 1: Intuitive Cluster Differentiation v. Result of K-Means
 
@@ -33,7 +33,7 @@ Autoencoders have demonstrated benefit for more complex input spaces representat
 
 <div align="center">
   
-![alt text](https://github.com/kark23/deepknn/blob/master/figs/fig3.PNG?raw=true)
+![alt text](https://github.com/kark23/deepknn/blob/dev/figs/fig3.PNG?raw=true)
 
 Figure 2: Classification Performance Benefits of Autoencoder v. Other Dimensional Reduction Techniques for Various Datasets, from [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf) (note only LDA ever outperformed AE but their AE had no dependent variable objective like LDA, whereas this module has that capability)
 
@@ -49,7 +49,7 @@ For an instance of the deepknn model class, there a decent degree of customizabi
 
 <div align="center">
   
-![alt text](https://github.com/kark23/deepknn/blob/master/figs/fig2.PNG?raw=true)
+![alt text](https://github.com/kark23/deepknn/blob/dev/figs/fig2.PNG?raw=true)
 
 Figure 3: Autoencoder Structure with Laten Space for KNN, from [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf) 
 
