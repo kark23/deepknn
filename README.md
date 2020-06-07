@@ -1,4 +1,4 @@
-# AE-KNN Module
+# DEEP-KNN Module
 
 ## Motivation
 
@@ -32,8 +32,20 @@ Autoencoders have demonstrated benefit for more complex input spaces representat
 * [Learning a Neighborhood Preserving Embedding by Convolutional Autoencoder](https://github.com/zhan1182/autoencoder-kNN)
 
 ## Implementation
+For an instance of the deepknn model class, there a decent degree of customizability for the user. Flexibilites for the user include:
+* Autoencoder shape/depth control
+* Decoded layer shape
+* Convolutional neural net associated optionality
+* Weight/bias adjustments
+* Regressor/classifier constraint for the additional objective function
+The autoencoder training structure allows for partial constraint to an additional objective function to some regressor/classifier dependent variable. During the training phase, experimentation has shown it beneficial to break the training into pre-training/training phases where the pre-training weights the additional obective at 0 in order to get a reasonable base NN before applying the additional constraint. Optionality for the training phases includes adjustment relative to:
+* Learning Rate
+* Batch size
+* Epoch size
+* Ratio of weighting for objective function vs. AE reconstruction error (note user must account for varying magnitudes for different functions when choosing this ratio)
+The predict method for the deepknn class uses KNN over the AE produced latent space to make a classification/regression prediction. Work is also in progress to allow for particle filter pdf approximation as an alternative to KNN.
 
-## Usage
+## Example Usage
 ```
 from main import *
 from tensorflow.examples.tutorials.mnist import input_data
