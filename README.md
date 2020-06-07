@@ -35,7 +35,7 @@ Autoencoders have demonstrated benefit for more complex input spaces representat
   
 ![alt text](https://github.com/kark23/deepknn/blob/master/figs/fig3.PNG?raw=true)
 
-Figure 2: Classification Performance Benefits of Autoencoder v. Other Dimensional Reduction Techniques for Various Datasets, from [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf) (note only LDA ever outperformed AE but their AE had no dependent variable objective like LDA, whereas this module has allows for that capability)
+Figure 2: Classification Performance Benefits of Autoencoder v. Other Dimensional Reduction Techniques for Various Datasets, from [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf) (note only LDA ever outperformed AE but their AE had no dependent variable objective like LDA, whereas this module has that capability)
 
 </div>
 
