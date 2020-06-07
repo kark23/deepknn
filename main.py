@@ -30,7 +30,7 @@ def wvar(sd,shp):
 def bvar(val,shp):
 	return tf.Variable(tf.constant(val,shape=shp))
 
-class aeknn(object):
+class deepknn(object):
 
 	def __init__(self, typ, x, y, aeshape=[32,64,128], dense=30, dtyp='pandas', cnn=False, imshp=(28,28), kernel=3, strides=[1,2,2,1], padding='SAME', weight_sd_init=.1, bias_init=.1):
 		"""Arguments:
