@@ -9,7 +9,7 @@ Distance based metrics over the input space are central to many analytical/ML ba
 
 <div align="center">
   
-![alt text](https://github.com/kark23/ae-knn/blob/master/figs/fig1.PNG?raw=true)
+![alt text](https://github.com/kark23/deepknn/blob/master/figs/fig1.PNG?raw=true)
 
 Figure 1: Intuitive Cluster Differentiation v. Result of K-Means
 
@@ -31,6 +31,13 @@ Autoencoders have demonstrated benefit for more complex input spaces representat
 * [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf)
 * [Learning a Neighborhood Preserving Embedding by Convolutional Autoencoder](https://github.com/zhan1182/autoencoder-kNN)
 
+<div align="center">
+  
+![alt text](https://github.com/kark23/deepknn/blob/master/figs/fig3.PNG?raw=true)
+Figure 2: Classification Performance Benefits of Autoencoder v. Other Dimensional Reduction Techniques for Various Datasets, from [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf) (note only LDA ever outperformed AE but their AE had no dependent variable objective like LDA, whereas this module has allows for that capability)
+
+</div>
+
 ## Implementation
 For an instance of the deepknn model class, there a decent degree of customizability for the user. Flexibilites for the user include:
 * Autoencoder shape/depth control
@@ -38,11 +45,20 @@ For an instance of the deepknn model class, there a decent degree of customizabi
 * Convolutional neural net associated optionality
 * Weight/bias adjustments
 * Regressor/classifier constraint for the additional objective function
+
+<div align="center">
+  
+![alt text](https://github.com/kark23/deepknn/blob/master/figs/fig2.PNG?raw=true)
+Figure 3: Autoencoder Structure with Laten Space for KNN, from [AEkNN: An AutoEncoder kNN-based classifier withbuilt-in dimensionality reduction (2018)](https://arxiv.org/pdf/1802.08465.pdf) 
+
+</div>
+
 The autoencoder training structure allows for partial constraint to an additional objective function to some regressor/classifier dependent variable. During the training phase, experimentation has shown it beneficial to break the training into pre-training/training phases where the pre-training weights the additional obective at 0 in order to get a reasonable base NN before applying the additional constraint. Optionality for the training phases includes adjustment relative to:
-* Learning Rate
+* Learning rate
 * Batch size
 * Epoch size
 * Ratio of weighting for objective function vs. AE reconstruction error (note user must account for varying magnitudes for different functions when choosing this ratio)
+
 The predict method for the deepknn class uses KNN over the AE produced latent space to make a classification/regression prediction. Work is also in progress to allow for particle filter pdf approximation as an alternative to KNN.
 
 ## Example Usage
